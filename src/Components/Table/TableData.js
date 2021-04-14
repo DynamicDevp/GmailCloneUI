@@ -1,89 +1,54 @@
-import {HiOutlineStar , HiInbox, HiUsers, HiTag} from 'react-icons/hi'
+import {HiOutlineStar , HiInbox, HiUsers, HiTag , HiTrash} from 'react-icons/hi'
 const TableData = [
     {
         name : "Mozilla",
-        icon : <HiOutlineStar/>,
+        icon : <HiOutlineStar size = "20"/>,
         description : "In celebration of women and girls everywhere",
         time : "Mar 04",
-        input : <input type = "checkbox"/>
+        action : <HiTrash size = "20"/>
     },
     {
         name : "Mozilla",
-        icon : <HiOutlineStar/>,
+        icon : <HiOutlineStar size = "20"/>,
         description : "In celebration of women and girls everywhere",
         time : "Mar 04",
-        input : <input type = "checkbox"/>
+        action : <HiTrash size = "20"/>
     },
     {
         name : "Mozilla",
-        icon : <HiOutlineStar/>,
+        icon : <HiOutlineStar size = "20"/>,
         description : "In celebration of women and girls everywhere",
         time : "Mar 04",
-        input : <input type = "checkbox"/>
+        action : <HiTrash size = "20"/>
     },
     {
         name : "Mozilla",
-        icon : <HiOutlineStar/>,
+        icon : <HiOutlineStar size = "20"/>,
         description : "In celebration of women and girls everywhere",
         time : "Mar 04",
-        input : <input type = "checkbox"/>
+        action : <HiTrash size = "20"/>
     },
     {
         name : "Mozilla",
-        icon : <HiOutlineStar/>,
+        icon : <HiOutlineStar size = "20"/>,
         description : "In celebration of women and girls everywhere",
         time : "Mar 04",
-        input : <input type = "checkbox"/>
+        action : <HiTrash size = "20"/>
     },
     {
         name : "Mozilla",
-        icon : <HiOutlineStar/>,
+        icon : <HiOutlineStar size = "20"/>,
         description : "In celebration of women and girls everywhere",
         time : "Mar 04",
-        input : <input type = "checkbox"/>
+        action : <HiTrash size = "20"/>
     },
     {
         name : "Mozilla",
-        icon : <HiOutlineStar/>,
+        icon : <HiOutlineStar size = "20"/>,
         description : "In celebration of women and girls everywhere",
         time : "Mar 04",
-        input : <input type = "checkbox"/>
+        action : <HiTrash size = "20"/>
     },
-    {
-        name : "Mozilla",
-        icon : <HiOutlineStar/>,
-        description : "In celebration of women and girls everywhere",
-        time : "Mar 04",
-        input : <input type = "checkbox"/>
-    },
-    {
-        name : "Mozilla",
-        icon : <HiOutlineStar/>,
-        description : "In celebration of women and girls everywhere",
-        time : "Mar 04",
-        input : <input type = "checkbox"/>
-    },
-    {
-        name : "Mozilla",
-        icon : <HiOutlineStar/>,
-        description : "In celebration of women and girls everywhere",
-        time : "Mar 04",
-        input : <input type = "checkbox"/>
-    },
-    {
-        name : "Mozilla",
-        icon : <HiOutlineStar/>,
-        description : "In celebration of women and girls everywhere",
-        time : "Mar 04",
-        input : <input type = "checkbox"/>
-    },
-    {
-        name : "Mozilla",
-        icon : <HiOutlineStar/>,
-        description : "In celebration of women and girls everywhere",
-        time : "Mar 04",
-        input : <input type = "checkbox"/>
-    }
 ]
 
 const TableTopData = [

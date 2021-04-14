@@ -5,7 +5,13 @@ export default function Sidebar(props) {
     return (
         <div className = {props.Show ? "sidebar active" : "sidebar"}>
             <div className = "sidebar-top">
-                <Button className = "button-top">Redactar</Button>
+                <Button className = {props.Show ? "button-top active" : "button-top"}>
+                    {props.Show ? 
+                        "Redactar"
+                    :
+                        ""
+                    }
+                </Button>
             </div>
             <Nav className = "flex-column">
                 {
