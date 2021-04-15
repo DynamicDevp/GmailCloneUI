@@ -1,5 +1,5 @@
-import { createContext } from "react";
+import React from "react";
 
-const MailContext = createContext({})
+const MailContext = React.createContext({})
 
 export default MailContext

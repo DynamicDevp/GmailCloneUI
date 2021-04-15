@@ -13,7 +13,6 @@ export default function TableTop() {
                             </div>
                             <div className = "name-top">
                                 {item.name}
-                                {item.names}
                             </div>
                         </Row>
                     </td>

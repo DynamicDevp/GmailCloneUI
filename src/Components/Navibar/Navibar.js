@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar , Form , Button} from 'react-bootstrap'
-import { HiOutlineCog , HiOutlineMenu, HiOutlineViewGrid , HiOutlineQuestionMarkCircle , HiOutlineSearch} from 'react-icons/hi'
+import { HiOutlineCog , HiOutlineMenu, HiOutlineViewGrid , HiOutlineQuestionMarkCircle , HiOutlineSearch, HiOutlineUser} from 'react-icons/hi'
 import img from '../../Assets/logogmail.png'
 
 export default function Navibar(props) {
@@ -21,6 +21,7 @@ export default function Navibar(props) {
                     <Button className = "btn-asystency"><HiOutlineQuestionMarkCircle size = "25"/></Button>
                     <Button className = "btn-config"><HiOutlineCog size = "25"/></Button>
                     <Button className = "btn-apps"><HiOutlineViewGrid size = "25"/></Button>
+                    <Button className = "btn-user"><HiOutlineUser size = "25"/></Button>
                 </div>
             </Navbar> 
         </div>

@@ -52,7 +52,7 @@
     max-width: 650px;
 }
 
-.btn-asystency{
+.btn-asystency, .btn-apps , .btn-config , .btn-user{
     margin-right: 1em !important;
     padding: 0 .5em .2em .5em !important;
     background-color: transparent !important;
@@ -61,22 +61,8 @@
     border-radius: 50% !important; 
 }
 
-.btn-config{
-    margin-right: 1em !important;
-    padding: 0 .5em .2em .5em !important;
-    background-color: transparent !important;
-    border-color: white !important;
-    color: #808080 !important;
-    border-radius: 50% !important; 
-}
-
-.btn-apps{
-    margin-right: 1em !important;
-    padding: 0 .5em .2em .5em !important;
-    background-color: transparent !important;
-    border-color: white !important;
-    color: #808080 !important;
-    border-radius: 50% !important; 
+.btn-toggler:hover , .btn-asystency:hover, .btn-config:hover , .btn-apps:hover , .btn-user:hover{
+    background-color: #d8d7d7a6 !important;
 }
 
 /* Sidebar */
@@ -124,10 +110,10 @@
     height: 45px;
     border-radius: 60% !important;
     background-color: transparent !important;
-    color: black !important;
-    border-color: rgb(182, 180, 180) !important;
-    box-shadow: 0 1px 1px gray !important;
-    transition: all .5s ease !important;
+    color: rgb(248, 2, 2) !important;
+    border-color: rgb(214, 211, 211) !important;
+    transition: all .4s ease !important;
+    box-shadow: .5px 2px 5px rgb(190, 189, 189) !important;
 }
 .button-top.active{
     border-radius: 40px !important;
@@ -135,6 +121,11 @@
     margin-left: 0;
 }
 
+.button-top:hover{
+    background-color: rgba(255, 255, 255, 0.781) !important;
+    box-shadow: 1px 2px 6px rgb(117, 115, 115) !important;
+    border-color: #d4d3d3a4 !important;
+}
 /* Table */
 
 .table td{
@@ -168,9 +159,15 @@
 .td-principal:hover{
     background-color: #d4d3d3a4 !important;
 }
+.td-social , .td-promociones{
+    color: #808080 !important;
+}
+
+.td-social:hover , .td-promociones:hover{
+    background-color: #d4d3d3a4 !important;
+}
 .icon-top{
     margin: 0 16px;
-    padding-top: .4em;
 }
 .name-top {
     margin: 0 16px 0 0;
@@ -182,8 +179,7 @@
 
 .table-content:hover{
     background-color: #f0efef5d !important;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px rgb(206, 205, 205) !important;
+    box-shadow: 2px 3px 7px rgb(206, 205, 205) !important;
 }
 
 .btn-actions{

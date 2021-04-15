@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { Nav, Button } from 'react-bootstrap';
-import SidebarData from './SidebarData'
+import SidebarData from './SidebarData';
+import { HiPlus } from 'react-icons/hi';
+
 export default function Sidebar(props) {
     return (
         <div className = {props.Show ? "sidebar active" : "sidebar"}>
@@ -9,7 +11,7 @@ export default function Sidebar(props) {
                     {props.Show ? 
                         "Redactar"
                     :
-                        ""
+                        <HiPlus size = "25"/>
                     }
                 </Button>
             </div>
