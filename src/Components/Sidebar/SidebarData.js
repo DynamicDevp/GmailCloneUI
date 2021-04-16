@@ -1,6 +1,6 @@
-import { HiInbox , HiStar , HiPaperAirplane , HiDocumentText , HiChat , HiBookmark , HiInformationCircle, HiClock, HiOutlineChevronDown} from 'react-icons/hi'
+import { HiInbox , HiStar , HiPaperAirplane , HiDocumentText , HiChat , HiBookmark , HiMail, HiInformationCircle , HiClock, HiOutlineChevronDown, HiTrash} from 'react-icons/hi'
 const size = "22"
-const SidebarData = [
+const NavData = [
     {
         nombre: "Recibidos",
         link: "#recibidos",
@@ -26,21 +26,34 @@ const SidebarData = [
         link: "#borradores",
         icons: <HiDocumentText size = {size}/>
     },
-    {
-        nombre: "Chats",
-        link: "#chats",
-        icons: <HiChat size = {size}/>
-    },
+]
+
+const NavSecondaryData = [
     {
         nombre: "Importantes",
         link: "#importantes",
         icons: <HiBookmark size = {size}/>
     },
     {
-        nombre: "Más",
-        link: "#",
-        icons: <HiOutlineChevronDown size = {size}/> 
-    }
+        nombre: "Chats",
+        link: "#chats",
+        icons: <HiChat size = {size}/>
+    },
+    {
+        nombre: "Todos",
+        link: "#todos",
+        icons: <HiMail size = {size}/>
+    },
+    {
+        nombre: "Spam",
+        link: "#spam",
+        icons: <HiInformationCircle size = {size}/>
+    },
+    {
+        nombre: "Papelera",
+        link: "#papelera",
+        icons: <HiTrash size = {size}/>
+    },
 ]
 
-export default SidebarData
+export {NavData, NavSecondaryData}

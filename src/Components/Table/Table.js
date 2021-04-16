@@ -10,6 +10,7 @@ export default function Tables() {
     }
     return (
             <Table>
+                <tbody>
                 {
                     mail.map((item,index)  => (
                         <tr className = "table-content" key = {"tr" + index}>
@@ -23,6 +24,7 @@ export default function Tables() {
                         </tr>
                     ))
                 }
+                </tbody>
             </Table>
     )
 }
