@@ -223,3 +223,46 @@
     background: #d1d1d1 !important;
 }
 
+.form-fixed{
+    position: fixed;
+    right: 50px;
+    bottom: 0;
+    z-index: 1900;
+    background-color: #f8f8f8;
+    width: 600px;
+    height: 590px;
+    transition: all ease .5s;
+    box-shadow: 0 5px 10px rgb(109, 109, 109);
+}
+
+.top-form{
+    height: 45px;
+    width: 100%;
+    background-color: #636262;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-content{
+    height: 85%;
+    padding: 1em;
+}
+
+.input-destinatarios, .input-asunto{
+    width: 100% !important;
+    background-color: transparent !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-bottom: 2px solid rgb(165, 164, 164) !important;
+    border-radius: 5px !important;
+    outline: none !important;
+    margin-bottom: .5em !important;
+}
+
+.text-area{
+    width: 100% !important;
+    height: 85% !important;
+    resize: none !important;
+    background-color: transparent !important;
+    border: 0 !important;
+}

@@ -9,7 +9,7 @@ export default function Sidebar(props) {
     return (
         <div className = {props.Show ? "sidebar active" : "sidebar"}>
             <div className = "sidebar-top">
-                <Button className = {props.Show ? "button-top active" : "button-top"}>
+                <Button className = {props.Show ? "button-top active" : "button-top"} onClick = {() => props.onShowForm()}>
                     {props.Show ? 
                         "Redactar"
                     :
