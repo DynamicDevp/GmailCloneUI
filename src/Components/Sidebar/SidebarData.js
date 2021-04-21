@@ -1,4 +1,4 @@
-import { HiInbox , HiStar , HiPaperAirplane , HiDocumentText , HiChat , HiBookmark , HiMail, HiInformationCircle , HiClock, HiOutlineChevronDown, HiTrash} from 'react-icons/hi'
+import { HiInbox , HiStar , HiPaperAirplane , HiDocumentText , HiChat , HiBookmark , HiMail, HiInformationCircle , HiClock, HiTrash} from 'react-icons/hi'
 const size = "22"
 const NavData = [
     {

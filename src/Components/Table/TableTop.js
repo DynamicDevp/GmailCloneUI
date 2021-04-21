@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table, Row, Col } from 'react-bootstrap';
+import { Table, Row, Badge } from 'react-bootstrap';
 import { TableTopData } from './TableData';
 export default function TableTop() {
     return (
@@ -14,6 +14,7 @@ export default function TableTop() {
                                 </div>
                                 <div className = "name-top">
                                     {item.name}
+                                    <Badge variant = {item.variant} className= "ml-2">{item.recibidos}</Badge>
                                 </div>
                             </Row>
                         </td>

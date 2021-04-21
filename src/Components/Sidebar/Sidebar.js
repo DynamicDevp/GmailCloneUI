@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Nav, Button } from 'react-bootstrap';
 import {NavData, NavSecondaryData} from './SidebarData';
-import { HiPlus, HiOutlineChevronDown } from 'react-icons/hi';
+import { HiOutlineChevronDown, HiMail } from 'react-icons/hi';
 
 export default function Sidebar(props) {
     const [show, setShow] = useState(false)
@@ -11,9 +11,9 @@ export default function Sidebar(props) {
             <div className = "sidebar-top">
                 <Button className = {props.Show ? "button-top active" : "button-top"} onClick = {() => props.onShowForm()}>
                     {props.Show ? 
-                        "Redactar"
+                        <span><HiMail size = "20"/>Redactar</span>
                     :
-                        <HiPlus size = "25"/>
+                        <HiMail size = "25"/>
                     }
                 </Button>
             </div>

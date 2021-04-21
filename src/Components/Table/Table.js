@@ -1,15 +1,12 @@
 import React, {useContext}from 'react'
 import { Table, Button, Badge } from 'react-bootstrap'
+import { HiOutlineStar, HiTrash, HiBookmarkAlt } from 'react-icons/hi'
 import MailContext from '../../Context/MailContext'
 
 export default function Tables() {
-    const [mail, setMail] = useContext(MailContext)
-    const DeleteMail = (id) => {
-        const datafilter = mail.filter(item => item.id !== id)
-        setMail(datafilter)
-    }
+    const mail = useContext(MailContext)
     return (
-            <Table>
+            <Table responsive>
                 <tbody>
                 {
                     mail.map((item,index)  => (
@@ -17,10 +14,10 @@ export default function Tables() {
                             <td></td>
                             <td><b>{item.name}</b></td>
                             <td><b>{item.description}</b></td>
-                            <td></td>
+                            <td><Button className = "btn-actions"><HiBookmarkAlt size = "20"/></Button></td>
+                            <td><Button className = "btn-actions"><HiTrash size = "20"/></Button></td>
+                            <td><Button className = "btn-actions"><HiOutlineStar size = "20"/></Button></td>
                             <td><h5><Badge variant="danger">{item.time}</Badge></h5></td>
-                            <td><Button className = "btn-actions" onClick = {() => DeleteMail(item.id)}>{item.action}</Button></td>
-                            <td><Button className = "btn-star">{item.icon}</Button></td>
                         </tr>
                     ))
                 }

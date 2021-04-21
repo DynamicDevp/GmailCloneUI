@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar , Form , Button} from 'react-bootstrap'
 import { HiOutlineCog , HiOutlineMenu, HiOutlineViewGrid , HiOutlineQuestionMarkCircle , HiOutlineSearch, HiOutlineUser} from 'react-icons/hi'
-import img from '../../Assets/logogmail.png'
+import img from '../../Assets/img/logogmail.png'
 
 export default function Navibar(props) {
     return (
