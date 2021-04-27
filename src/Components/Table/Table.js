@@ -2,7 +2,7 @@ import React, {useContext}from 'react'
 import { Table, Button, Badge } from 'react-bootstrap'
 import { HiOutlineStar, HiTrash, HiBookmarkAlt } from 'react-icons/hi'
 import MailContext from '../../Context/MailContext'
-
+import './Style.css';
 export default function Tables() {
     const mail = useContext(MailContext)
     return (

@@ -3,7 +3,7 @@ import { Navbar , Form , Button} from 'react-bootstrap'
 import { HiOutlineCog , HiOutlineMenu, HiOutlineViewGrid , HiOutlineQuestionMarkCircle , HiOutlineSearch, HiOutlineUser} from 'react-icons/hi'
 import img from '../../Assets/img/logogmail.png'
 import {useSidebar} from '../../Context/SidebarContext'
-
+import './Style.css'
 export default function Navibar() {
     const {ShowSidebar} = useSidebar()
     return (

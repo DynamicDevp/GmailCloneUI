@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
 import TopIcons from './TopContentData';
-
+import './Style.css'
 export default function TopContent(props) {
     return (
         <div className = {props.Show ? "top-content active" :"top-content"}>

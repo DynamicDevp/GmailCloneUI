@@ -3,7 +3,7 @@ import { HiXCircle, HiTemplate } from 'react-icons/hi'
 import { Button , Dropdown , ButtonGroup } from 'react-bootstrap'
 import FormIcons from './FormFixedData'
 import {useForm} from '../../Context/FormFixedContext'
-
+import './Style.css'
 export default function FormFixed() {
     const {show, ShowForm} =  useForm()
     return (

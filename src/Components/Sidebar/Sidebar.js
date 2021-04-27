@@ -4,7 +4,7 @@ import {NavData, NavSecondaryData} from './SidebarData';
 import { HiOutlineChevronDown, HiMail } from 'react-icons/hi';
 import {useSidebar} from '../../Context/SidebarContext';
 import {useForm} from '../../Context/FormFixedContext';
-
+import './Style.css';
 export default function Sidebar(props) {
     const {sidebar} = useSidebar()
     const {ShowForm} = useForm()
