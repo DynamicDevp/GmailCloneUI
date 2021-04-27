@@ -1,0 +1,30 @@
+.top-content{
+    position: fixed;
+    top: 55px;
+    height: 54px;
+    right: 0; 
+    background: #ffffff;
+    left: 75px;
+    display: flex;
+    justify-content: flex-end;
+    margin: .5em 0 .5em 0;
+    padding: .5em;
+    border: 1px solid rgba(189, 188, 188, 0.63);
+    border-left: 0;
+    border-right: 0; 
+    transition: all ease .5s;
+}
+
+.top-content.active{
+    left: 240px;
+}
+.top-btn{
+    background-color: transparent !important;
+    color: #808080 !important;
+    border-color: transparent !important;
+    border-radius: 10px !important;
+    margin-right: .5em !important;
+}
+.top-btn:hover{
+    background-color: #adababa2 !important;
+}

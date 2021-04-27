@@ -1,0 +1,68 @@
+.sidebar {
+    padding: .5em 0;
+    position: fixed;
+    top: 70px;
+    width: 75px;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    transition: all .5s ease;
+}
+
+.sidebar-top{
+    margin: .5em 0 1em 0;
+    padding: 0 .3em 0 .3em;
+}
+
+.sidebar.active{
+    width: 240px;
+}
+
+.nav-link{
+    color: #777676 !important;
+    background-color: transparent !important;
+    padding: 0 20px 0 26px !important;
+    height: 30px !important;
+    border-radius: 0 30px 30px 0 !important;
+}
+
+.icon-plus{
+    transform: rotateX(0) !important;
+    transition: all ease .4s;
+}
+
+.icon-plus.active{
+    transform: rotateX(180deg) !important;
+}
+.nav-link:hover{
+    background-color: #d1d1d1 !important;
+}
+.name-link{
+    padding-left: 1em;
+    color: #636262 !important;
+
+}
+.button-top{
+    width: 80%;
+    margin-left: 5px;
+    max-width: 145px;
+    height: 45px;
+    border-radius: 60% !important;
+    background-color: transparent !important;
+    color: rgb(248, 2, 2) !important;
+    border-color: rgb(214, 211, 211) !important;
+    transition: all .4s ease !important;
+    box-shadow: .5px 2px 5px rgb(190, 189, 189) !important;
+}
+.button-top.active{
+    border-radius: 40px !important;
+    width: 100% !important;
+    margin-left: 0;
+}
+
+.button-top:hover{
+    background-color: rgba(255, 255, 255, 0.781) !important;
+    box-shadow: 1px 2px 6px rgb(117, 115, 115) !important;
+    border-color: #d4d3d3a4 !important;
+}
