@@ -2,14 +2,16 @@ import React from 'react'
 import { HiXCircle, HiTemplate } from 'react-icons/hi'
 import { Button , Dropdown , ButtonGroup } from 'react-bootstrap'
 import FormIcons from './FormFixedData'
+import {useForm} from '../../Context/FormFixedContext'
 
-export default function FormFixed(props) {
+export default function FormFixed() {
+    const {show, ShowForm} =  useForm()
     return (
-        <div className = "form-fixed" style = {props.Show ? {height: "590px"} : {height: "0"}}>
+        <div className = "form-fixed" style = {show ? {height: "590px"} : {height: "0"}}>
             <div className = "top-form">
                 <span className = "top-title">Enviar Correo</span>
                 <Button className = "btn-maxi"><HiTemplate size = "20"/></Button>
-                <Button className = "btn-close" onClick = { () => props.onShowForm() }><HiXCircle size = "20"/></Button>
+                <Button className = "btn-close" onClick = { ShowForm }><HiXCircle size = "20"/></Button>
             </div>
             <div className = "form-content">
                 <input placeholder = " Destinatarios" className = "input-destinatarios"/>

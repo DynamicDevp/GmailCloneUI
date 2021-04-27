@@ -2,12 +2,14 @@ import React from 'react'
 import { Navbar , Form , Button} from 'react-bootstrap'
 import { HiOutlineCog , HiOutlineMenu, HiOutlineViewGrid , HiOutlineQuestionMarkCircle , HiOutlineSearch, HiOutlineUser} from 'react-icons/hi'
 import img from '../../Assets/img/logogmail.png'
+import {useSidebar} from '../../Context/SidebarContext'
 
-export default function Navibar(props) {
+export default function Navibar() {
+    const {ShowSidebar} = useSidebar()
     return (
         <div>
              <Navbar variant="light" fixed="top">
-                <Button className = "btn-toggler" onClick = {() => props.onShow()}><HiOutlineMenu size = "20"/></Button>
+                <Button className = "btn-toggler" onClick = {ShowSidebar}><HiOutlineMenu size = "20"/></Button>
                 <Navbar.Brand href="#home">
                     <img src = {img} className = "img-brand" width = "109" height = "40" alt = "img"/>
                 </Navbar.Brand>

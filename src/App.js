@@ -8,28 +8,26 @@ import FormFixed from './Components/FormFixed/FormFixed';
 import MailContext from './Context/MailContext';
 import TopContent from './Components/TopContent/TopContent';
 import mails from './mails.json'
+import {useSidebar} from './Context/SidebarContext'
 
 function App() {
-  const[sidebar, setSidebar] = useState(false)
-  const[form, setForm] = useState(false)
+  const {sidebar} = useSidebar()
   const[mail, setMail] = useState([])
-  const ShowSidebar = () => (setSidebar(!sidebar))
-  const ShowForm = () => (setForm(!form))
   useEffect(() => {
     setMail(mails)
   }, [])
   return (
     <div className="App">
-      <Navibar onShow = {ShowSidebar}/>
-      <Sidebar Show = {sidebar} onShowForm = {ShowForm}/>
-      <TopContent Show = {sidebar}/>
+      <Navibar/>
+      <Sidebar/>
+      <TopContent/>
       <div className = {sidebar ? "content active" : "content"}>
         <TableTop/>
         <MailContext.Provider value = {mail}>
           <Table/>
         </MailContext.Provider>
       </div>
-      <FormFixed Show = {form} onShowForm = {() => setForm(false)}/>
+      <FormFixed/>
     </div>
   );
 }
