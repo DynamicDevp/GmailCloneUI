@@ -24,21 +24,21 @@ export default function Sidebar(props) {
             <Nav className = "flex-column">
                 {
                     NavData.map((item,index) => (
-                        <Nav.Link href = {item.link} key = {index}>
-                            {item.icons} <span className = "name-link" style = {sidebar ? {display: ""} : {display: "none"}}>{item.nombre}</span>
+                        <Nav.Link href = {item.link} key = {index} className = "nav-sidebar">
+                            {item.icons} <span className = "name-link" style = {sidebar ? {display: "inline"} : {display: "none"}}>{item.nombre}</span>
                         </Nav.Link>
                     ))
                 }
-                <Nav.Link href = "#" onClick = {ShowNav}>
+                <Nav.Link href = "#" onClick = {ShowNav} className = "nav-sidebar">
                    <HiOutlineChevronDown size = "25" className = {show ? "icon-plus active" : "icon-plus"}/>
                    <span className = "name-link" style = {sidebar ? {display: ""} : {display: "none"}}>Más</span>
                 </Nav.Link>
             </Nav>
-            <Nav className = "flex-column" style = {show ? {display: "block"} : {display: "none"}}>
+            <Nav className = "flex-column" style = {show ? {display: "inline"} : {display: "none"}}>
             {
                     NavSecondaryData.map((item,index) => (
-                        <Nav.Link href = {item.link} key = {index}>
-                            {item.icons} <span className = "name-link" style = {props.Show ? {display: ""} : {display: "none"}}>{item.nombre}</span>
+                        <Nav.Link href = {item.link} key = {index} className = "nav-sidebar">
+                            {item.icons} <span className = "name-link" style = {show ? {display: ""} : {display: "none"}}>{item.nombre}</span>
                         </Nav.Link>
                     ))
                 }

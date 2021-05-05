@@ -14,11 +14,13 @@
 
 .btn-toggler {
     margin-right: .5em;
+    width: 45px !important;
+    height: 40px !important;
     background-color: transparent !important;
     border-color: white !important;
     color: #6b6b6b !important;
     border-radius: 50% !important;
-    padding: 0 .5em .2em .5em !important; 
+    padding: 0 .5em  0 .5em !important; 
 }
 
 .search {
@@ -57,7 +59,9 @@
 
 .btn-asystency, .btn-apps , .btn-config , .btn-user{
     margin-right: 1em !important;
-    padding: 0 .5em .2em .5em !important;
+    width: 50px !important;
+    height: 45px !important;
+    padding: 0 .5em 0 .5em !important;
     background-color: transparent !important;
     border-color: white !important;
     color: #808080 !important;

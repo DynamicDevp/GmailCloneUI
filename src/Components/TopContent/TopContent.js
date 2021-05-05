@@ -7,8 +7,8 @@ export default function TopContent(props) {
         <div className = {props.Show ? "top-content active" :"top-content"}>
             <Button className = "top-btn">50 de 2000</Button>
             {
-                TopIcons.map(item => (
-                    <Button className = "top-btn">
+                TopIcons.map((item, index) => (
+                    <Button className = "top-btn" key = {index}>
                         {item.icon}
                     </Button>
                 ))

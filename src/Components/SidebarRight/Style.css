@@ -1,0 +1,38 @@
+.sidebar-right{
+    position: fixed;
+    top: 117px;
+    z-index: 1001;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 1px 4px 1px rgb(190, 190, 190);
+    transition: all .5s ease;
+}
+
+.sidebar-right.active{
+    width: 80px;
+}
+
+.calendar{
+    background: url('../../Assets/img/calendar.png') no-repeat center;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: .8em;
+}
+
+.contact{
+    background: url('../../Assets/img/google-contacts.png') no-repeat center;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: .8em;
+}
+.keep{
+    background: url('../../Assets/img/google-keep.png') no-repeat center;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: .8em;
+}

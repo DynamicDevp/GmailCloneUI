@@ -3,9 +3,11 @@ import { Navbar , Form , Button} from 'react-bootstrap'
 import { HiOutlineCog , HiOutlineMenu, HiOutlineViewGrid , HiOutlineQuestionMarkCircle , HiOutlineSearch, HiOutlineUser} from 'react-icons/hi'
 import img from '../../Assets/img/logogmail.png'
 import {useSidebar} from '../../Context/SidebarContext'
+import { useSidebarRight } from '../../Context/SidebarRightContext'
 import './Style.css'
 export default function Navibar() {
     const {ShowSidebar} = useSidebar()
+    const {ShowSidebarR} = useSidebarRight()
     return (
         <div>
              <Navbar variant="light" fixed="top">
@@ -22,7 +24,7 @@ export default function Navibar() {
                 <div className = "button-group">
                     <Button className = "btn-asystency"><HiOutlineQuestionMarkCircle size = "25"/></Button>
                     <Button className = "btn-config"><HiOutlineCog size = "25"/></Button>
-                    <Button className = "btn-apps"><HiOutlineViewGrid size = "25"/></Button>
+                    <Button className = "btn-apps" onClick = {ShowSidebarR}><HiOutlineViewGrid size = "25"/></Button>
                     <Button className = "btn-user"><HiOutlineUser size = "25"/></Button>
                 </div>
             </Navbar> 

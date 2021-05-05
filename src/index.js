@@ -5,11 +5,14 @@ import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { SidebarProvider } from './Context/SidebarContext'
 import { FormProvider } from './Context/FormFixedContext'
+import { SidebarRightProvider } from './Context/SidebarRightContext'
 ReactDOM.render(
   <React.StrictMode>
     <FormProvider>
       <SidebarProvider>
-        <App />
+        <SidebarRightProvider>
+          <App />
+        </SidebarRightProvider>
       </SidebarProvider>
     </FormProvider>
   </React.StrictMode>,

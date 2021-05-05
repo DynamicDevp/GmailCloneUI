@@ -1,13 +1,13 @@
 .sidebar {
     padding: .5em 0;
     position: fixed;
-    top: 70px;
+    top: 66px;
     width: 75px;
     height: 100%;
     overflow-y: auto;
     z-index: 1000;
     background-color: rgb(255, 255, 255);
-    transition: all .5s ease;
+    box-shadow: 0 1px 4px 1px rgb(190, 190, 190);
 }
 
 .sidebar-top{
@@ -19,7 +19,7 @@
     width: 240px;
 }
 
-.nav-link{
+.nav-sidebar{
     color: #777676 !important;
     background-color: transparent !important;
     padding: 0 20px 0 26px !important;
@@ -35,11 +35,11 @@
 .icon-plus.active{
     transform: rotateX(180deg) !important;
 }
-.nav-link:hover{
+.nav-sidebar:hover{
     background-color: #d1d1d1 !important;
 }
 .name-link{
-    padding-left: 1em;
+    margin-left: 1em;
     color: #636262 !important;
 
 }
